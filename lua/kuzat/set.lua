@@ -8,6 +8,8 @@ vim.opt.expandtab = true
 
 vim.opt.wrap = false
 
+vim.o.scrolloff = 8
+
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
@@ -15,6 +17,6 @@ vim.opt.termguicolors = true
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "120"
 
 vim.g.mapleader = " "
