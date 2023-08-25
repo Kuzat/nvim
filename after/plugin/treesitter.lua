@@ -37,3 +37,16 @@ require'nvim-treesitter.configs'.setup {
       max_file_lines = nil,
   }
 }
+
+local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+parser_config.jslt = {
+    install_info = {
+        url = "~/tree-sitter-jslt",
+        files = {"src/parser.c"},
+        branch = "main",
+        generate_requires_npm = false,
+        requires_generate_from_grammar = false,
+    },
+    filetype = "jslt"
+}
+
