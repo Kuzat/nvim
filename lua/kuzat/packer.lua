@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/playground')
     use('tpope/vim-fugitive')
     use('ThePrimeagen/harpoon')
+    use('m4xshen/autoclose.nvim')
 
     use {
         'VonHeikemen/lsp-zero.nvim',
