@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
     use('ThePrimeagen/harpoon')
     use('m4xshen/autoclose.nvim')
+    use('preservim/nerdtree')
 
     use {
         'VonHeikemen/lsp-zero.nvim',
