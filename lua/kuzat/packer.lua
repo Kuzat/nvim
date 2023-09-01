@@ -6,7 +6,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-
+    use('BurntSushi/ripgrep')
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.2',
         -- or                            , branch = '0.1.x',
@@ -24,6 +24,11 @@ return require('packer').startup(function(use)
     use('preservim/nerdtree')
     use('terrortylor/nvim-comment')
     use('github/copilot.vim')
+    use('folke/lsp-colors.nvim')
+    use('folke/trouble.nvim')
+    use('folke/todo-comments.nvim')
+    use('nvim-tree/nvim-web-devicons')
+    use('voldikss/vim-floaterm')
 
     use {
         'VonHeikemen/lsp-zero.nvim',
