@@ -13,7 +13,9 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
+    -- COlorschemes
     use({ 'rose-pine/neovim', as = 'rose-pine' })
+    use({ "catppuccin/nvim", as = "catppuccin" })
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
@@ -29,6 +31,16 @@ return require('packer').startup(function(use)
     use('folke/todo-comments.nvim')
     use('nvim-tree/nvim-web-devicons')
     use('voldikss/vim-floaterm')
+    use { "ellisonleao/glow.nvim", config = function() require("glow").setup() end }
+    use({ 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } })
+    use({ 'freddiehaddad/feline.nvim', requires = { 'kyazdani42/nvim-web-devicons' } })
+    use({
+        'folke/noice.nvim',
+        requires = {
+            { 'MunifTanjim/nui.nvim'},
+            { 'rcarriga/nvim-notify'}
+        },
+    })
 
     use {
         'VonHeikemen/lsp-zero.nvim',
